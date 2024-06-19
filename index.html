@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James E-Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+	<script>
+        // Check the flag in session storage
+        if (!sessionStorage.getItem('visitedWelcome')) {
+            // If the flag is not set, redirect to welcome.html
+            window.location.href = "welcome.html";
+        }
+    </script>
 </head>
 <body>
     <div class="cursor"></div>
