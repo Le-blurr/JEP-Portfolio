@@ -6,13 +6,23 @@
     <title>Welcome to James E-Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 	    <script>
-        // Set the flag in session storage
-        sessionStorage.setItem('visitedWelcome', 'true');
+        document.addEventListener('DOMContentLoaded', () => {
+            // Function to handle the redirection
+            const redirectToIndex = () => {
+                sessionStorage.setItem('visitedWelcome', 'true');
+                window.location.href = "index.html";
+            };
 
-        // Redirect to index.html after a short delay (to show some welcome content if needed)
-        setTimeout(() => {
-            window.location.href = "index.html";
-        }, 3000); // Adjust the delay as needed
+            // Event listener for the "Enter" key press
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    redirectToIndex();
+                }
+            });
+
+            // Event listener for click or tap event
+            document.addEventListener('click', redirectToIndex);
+        });
 		</script>
     <style>
         /* Spotlight Cursor Effect Styles */
