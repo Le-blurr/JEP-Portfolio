@@ -12,8 +12,18 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lexend", sans-serif;
     background: #f0f2f5;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.lexend-<uniquifier> {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 .cursor {
@@ -79,13 +89,7 @@ main {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    animation: spin 10s linear infinite;
     transition: transform 0.5s ease-out;
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
 }
 
 .content {
@@ -98,7 +102,7 @@ main {
 h1, h2, h3 {
     color: #2c3e50;
     margin-bottom: 20px;
-	font-family: cursive;
+	font-family: "Lexend", sans-serif;
 }
 
 h1 {
@@ -119,12 +123,12 @@ p, ul {
     color: #34495e;
     margin-bottom: 20px;
     font-size: 1rem;
-	font-family: cursive;
+	font-family: "Lexend", sans-serif;
 }
 
 .text-primary {
     color: #e85a4f !important;
-    font-family: cursive;
+    font-family: "Lexend", sans-serif;
     font-size: 1rem;
     line-height: 1.3;
 }
